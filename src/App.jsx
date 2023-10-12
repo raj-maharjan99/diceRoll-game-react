@@ -1,21 +1,23 @@
 import React, { useState } from "react";
-
+import "./style/App.css";
+import DiceGame from "./diceGame/dice";
+import Counter from "./counterApp/counter";
+import styles from "./style/buttonApp.module.css";
 const App = () => {
-  const [diceNumber, setDiceNumber] = useState(6);
-  const refreshDice = () => {
-    const randumNumber = Math.floor(Math.random() * 6) + 1;
-    setDiceNumber(randumNumber);
-    console.log(setDiceNumber);
-  };
+  const [resultDice, setResultDice] = useState(false);
+  const [counterApp, setCounterApp] = useState(false);
   return (
-    <div>
-      {" "}
-      <center>
-        <img src={`./public/${diceNumber}.png`} alt="" /> <br />
-        <br />
-        <button onClick={() => refreshDice()}>Let's Play LUDO</button>
-      </center>
-    </div>
+    <>
+      <div className={styles.btn_group}>
+        <button onClick={() => setResultDice(true)}>open Dice game</button>
+        <button onClick={() => setResultDice(false)}>Close Dice Game</button>
+        {resultDice && <DiceGame />}
+        <br />{" "}
+        <button onClick={() => setCounterApp(true)}>open Counter App</button>
+        <button onClick={() => setCounterApp(false)}>Close Counter App</button>
+        {counterApp && <Counter />}
+      </div>
+    </>
   );
 };
 

@@ -1,0 +1,9 @@
+/* css for 4 button inside APP.jsx */
+.btn_group button {
+  background-color: red;
+  font-size: 20px;
+  color: rgba(17, 0, 15, 0.778);
+  font-family: fantasy;
+  margin: 5px;
+  border-radius: 20px 0 0 20px;
+}

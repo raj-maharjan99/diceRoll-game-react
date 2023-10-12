@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(236, 204, 209);
+}
+.dice {
+  height: 350px;
+  width: 350px;
+  /* background-color: rgb(83, 171, 83); */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  gap: 10px;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+.dice button {
+  background-color: rgb(185, 7, 37);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* css for counter app */
+.counter_css {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  gap: 10px;
+  margin-left: 40%;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+.counter_css button {
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px 0 5px 0;
+}
+.count_css {
+  color: red;
+  font-size: 50px;
+  background: white;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px 0 80px 50px;
+  border: 3px solid rgb(52, 154, 5);
+
+  /* transform: rotate(-90deg); */
+}
