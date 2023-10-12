@@ -4,7 +4,9 @@ import DiceGame from "./diceGame/dice";
 import Counter from "./counterApp/counter";
 import styles from "./style/buttonApp.module.css";
 const App = () => {
-  const [resultDice, setResultDice] = useState(false);
+  //5 falsy values: ( 0, '', undefined, null, NaN ) we can use any falsy value inside useState
+
+  const [resultDice, setResultDice] = useState("");
   const [counterApp, setCounterApp] = useState(false);
   return (
     <>
